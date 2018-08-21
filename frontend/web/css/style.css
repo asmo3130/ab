@@ -1,0 +1,348 @@
+@import "http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css";
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@-webkit-keyframes scroll {
+0% {
+-webkit-transform: translate(0, 0);
+transform: translate(0, 0);
+}
+100% {
+-webkit-transform: translate(-100%, 0);
+transform: translate(-100%, 0)
+}
+}
+ 
+@keyframes scroll {
+0% {
+transform: translate(0, 0);
+}
+100% {
+transform: translate(-100%, 0)
+}
+}
+
+ 
+.marquee {
+max-width: 100%;
+white-space: nowrap;
+overflow: hidden;
+color: black;
+background-color: white;
+  vertical-align: middle;
+  height: 25px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+ 
+.marquee * {
+display: inline-block;
+padding-left: 100%;
+-webkit-animation: scroll 21s infinite linear;
+animation: scroll 21s infinite linear;
+}
+.marquee *:hover {
+-webkit-animation-play-state: paused;
+animation-play-state: paused;
+}
+.container-wrap {
+  width: 300px;
+  overflow: hidden;
+}
+
+.container {
+  display: block;
+}
+
+.block {
+  width: 100px;
+  border: 1px solid red;
+  display: block;
+  float: left;
+  box-sizing: border-box;
+}
+
+.left,
+.right {
+  display: inline-block;
+  width: 300px;
+  cursor: pointer;
+}
+.slider-text{
+    position: relative;
+    bottom: 100px;
+    width: 52%;
+    color: white;
+    height: 100px;
+    background-color: rgb(196, 196, 196, 0.3);
+}
+.container1 {
+    width: 100%;
+}
+.container1 .cal {
+}
+
+.cal {
+    display: block;
+    width: 97%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.cal a {
+    text-decoration: none;
+}
+
+.cal caption {
+    display: block;
+    line-height: 32px;
+    font-weight: bold;
+    color: #e2e2e2;
+    text-align: center;
+    text-shadow: 0 -1px black;
+    background: #333;
+    background: rgba(0, 0, 0, 0.35);
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #313131;
+
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.cal caption a {
+    display: block;
+    line-height: 32px;
+    padding: 0 10px;
+    font-size: 15px;
+    color: #e2e2e2;
+}
+
+.cal caption a:hover {
+    color: white;
+}
+
+.cal caption .prev {
+    float: left;
+}
+
+.cal caption .next {
+    float: right;
+}
+
+.cal th, .cal td {
+    width: 2%;
+    text-align: center;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+}
+
+.cal th:first-child, .cal td:first-child {
+    border-left: 0;
+}
+
+.cal th {
+    line-height: 20px;
+    font-size: 8px;
+    color: #696969;
+    text-transform: uppercase;
+    background: #f3f3f3;
+    border-left: 1px solid #f3f3f3;
+}
+
+.cal td {
+    font-size: 11px;
+    font-weight: bold;
+    border-top: 1px solid #c2c2c2;
+    border-left: 1px solid #c2c2c2;
+}
+
+.cal td a {
+    clear: both;
+    display: block;
+    position: relative;
+    line-height: 28px;
+    color: #666;
+
+    background-image: linear-gradient(to bottom, #eaeaea 0%, #e5e5e5 60%, #d9d9d9 100%);
+
+    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.cal td a:hover, .cal td.off a {
+    background: #f3f3f3;
+}
+
+.cal td.off a {
+    color: #b3b3b3;
+}
+
+.cal td.active a, .cal td a:active {
+    margin: -1px;
+    color: #f3f3f3;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    background: #6dafbf;
+    border: 1px solid #598b94;
+
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.cal td.active:first-child a, .cal td:first-child a:active {
+    border-left: 0;
+    margin-left: 0;
+}
+
+.cal td.active:last-child a, .cal td:last-child a:active {
+    border-right: 0;
+    margin-right: 0;
+}
+
+.cal tr:last-child td.active a, .cal tr:last-child td a:active {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+.stat_{
+    width: 90%;
+    border-radius: 8px;
+    margin: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+.stat_ #head{
+    color: darkblue;
+    vertical-align: middle;
+}
+.stat_ table tr td:first-child{
+    float: left;
+    margin-left: 10px;
+}
+.stat_ table tr td:last-child{
+    float: right;
+    margin-right: 10px;
+}
+.stat_ table{
+    width: 100%;
+    margin: 5px;
+}
+.stat_ table tr{
+    padding-bottom: 5px;
+}
+.slick-text{
+    width: 100%;
+    /* position: absolute; */
+    height: 100px;
+    background: white;
+    bottom: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 15px;
+}
+.slick-inlone{
+    width: 100%;
+    display: inline-flex;
+}
+.slick-partners{
+    width: 100%;
+    background-color: white;
+}
+/* Базовый контейнер табов */
+.tabs {
+    min-width: 320px;
+    max-width: 800px;
+    padding: 0px;
+    margin: 0 auto;
+}
+/* Стили секций с содержанием */
+.tabs>section {
+    display: none;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.tabs>section>p {
+    margin: 0 0 5px;
+    line-height: 1.5;
+    color: #383838;
+    /* прикрутим анимацию */
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Прячем чекбоксы */
+.tabs>input {
+    display: none;
+    position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs>label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #aaa;
+    border: 0px solid #ddd;
+    border-width: 1px 1px 1px 1px;
+    background: #f1f1f1;
+    border-radius: 3px 3px 0 0;
+}
+/* Шрифт-иконки от Font Awesome в формате Unicode */
+.tabs>label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+/* Изменения стиля переключателей вкладок при наведении */
+
+.tabs>label:hover {
+    color: #888;
+    cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs>input:checked+label {
+    color: #555;
+    border-top: 1px solid #009933;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+    display: block;
+}
+/* Убираем текст с переключателей
+* и оставляем иконки на малых экранах
+*/
+
+@media screen and (max-width: 680px) {
+    .tabs>label {
+        font-size: 0;
+    }
+    .tabs>label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+/* Изменяем внутренние отступы
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+    .tabs>label {
+        padding: 15px;
+    }
+}
